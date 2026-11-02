@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "socxai"
+version = "0.1.0"
+description = "Explainable SOC decision support interface based on human-AI collaboration"
+requires-python = ">=3.11"
+authors = [
+    { name = "Ali İhsan Dağaşan" },
+    { name = "Mehmet Emin Duran" },
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+socxai = ["store/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "realdata: runs against the real GUIDE dataset under data/raw/guide (slow; skipped when the data is absent)",
+]

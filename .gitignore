@@ -1,0 +1,29 @@
+# Data and generated artifacts (never tracked)
+/data/
+/artifacts/
+*.db
+*.db-wal
+*.db-shm
+
+# Secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Institutional and personal documents (kept locally, never tracked)
+/2209-A_*
+/26-27 Tasarım Basvurulari.xlsx
+/Bitirme Projesi Ara Rapor Formu.docx
+/Bitirme Projesi Yol Haritası.pdf
+/SistemTasarimi_Yol_Haritasi.pdf
+/proje_hakkında.txt
+
+# Session handoff note (local only)
+/docs/STATUS.md
